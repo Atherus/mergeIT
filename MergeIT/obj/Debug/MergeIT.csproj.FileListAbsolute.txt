@@ -12,3 +12,14 @@ c:\users\peter\documents\visual studio 2015\Projects\MergeIT\MergeIT\bin\Debug\i
 C:\Users\Peter\Documents\GitHub\mergeIT\MergeIT\bin\Debug\MergeIT.exe.config
 C:\Users\Peter\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.exe
 C:\Users\Peter\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.pdb
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\bin\Debug\MergeIT.exe.config
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.exe
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.pdb
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\bin\Debug\MergeIT.exe
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\bin\Debug\MergeIT.pdb
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\bin\Debug\itextsharp.dll
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\bin\Debug\itextsharp.xml
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.csprojResolveAssemblyReference.cache
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.Form1.resources
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.Properties.Resources.resources
+C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.csproj.GenerateResource.Cache

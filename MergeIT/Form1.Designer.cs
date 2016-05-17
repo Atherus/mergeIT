@@ -29,6 +29,9 @@
             this.buttonMerge = new System.Windows.Forms.Button();
             this.labelVersion = new System.Windows.Forms.Label();
             this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonRotatePlus = new System.Windows.Forms.Button();
+            this.buttonRotateMinus = new System.Windows.Forms.Button();
+            this.buttonDeleteFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxFiles
@@ -85,7 +88,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(60, 13);
             this.labelVersion.TabIndex = 4;
-            this.labelVersion.Text = "Version 0.1";
+            this.labelVersion.Text = "Version 0.2";
             // 
             // buttonClear
             // 
@@ -98,12 +101,48 @@
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
+            // buttonRotatePlus
+            // 
+            this.buttonRotatePlus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRotatePlus.Location = new System.Drawing.Point(373, 74);
+            this.buttonRotatePlus.Name = "buttonRotatePlus";
+            this.buttonRotatePlus.Size = new System.Drawing.Size(75, 25);
+            this.buttonRotatePlus.TabIndex = 6;
+            this.buttonRotatePlus.Text = "+90°";
+            this.buttonRotatePlus.UseVisualStyleBackColor = true;
+            this.buttonRotatePlus.Click += new System.EventHandler(this.buttonRotatePlus_Click);
+            // 
+            // buttonRotateMinus
+            // 
+            this.buttonRotateMinus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRotateMinus.Location = new System.Drawing.Point(373, 105);
+            this.buttonRotateMinus.Name = "buttonRotateMinus";
+            this.buttonRotateMinus.Size = new System.Drawing.Size(75, 25);
+            this.buttonRotateMinus.TabIndex = 7;
+            this.buttonRotateMinus.Text = "-90°";
+            this.buttonRotateMinus.UseVisualStyleBackColor = true;
+            this.buttonRotateMinus.Click += new System.EventHandler(this.buttonRotateMinus_Click);
+            // 
+            // buttonDeleteFile
+            // 
+            this.buttonDeleteFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDeleteFile.Location = new System.Drawing.Point(373, 136);
+            this.buttonDeleteFile.Name = "buttonDeleteFile";
+            this.buttonDeleteFile.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteFile.TabIndex = 8;
+            this.buttonDeleteFile.Text = "Odstrániť";
+            this.buttonDeleteFile.UseVisualStyleBackColor = true;
+            this.buttonDeleteFile.Click += new System.EventHandler(this.buttonDeleteFile_Click);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 250);
+            this.Controls.Add(this.buttonDeleteFile);
+            this.Controls.Add(this.buttonRotateMinus);
+            this.Controls.Add(this.buttonRotatePlus);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.buttonMerge);
@@ -126,6 +165,9 @@
         private System.Windows.Forms.Button buttonMerge;
         private System.Windows.Forms.Label labelVersion;
         private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonRotatePlus;
+        private System.Windows.Forms.Button buttonRotateMinus;
+        private System.Windows.Forms.Button buttonDeleteFile;
     }
 }
 
