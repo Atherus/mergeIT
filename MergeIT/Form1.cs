@@ -2,12 +2,11 @@
 using iTextSharp.text.pdf;
 using System;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace MergeIT {
-    public partial class Form1 : Form {
 
+    public partial class Form1 : Form {
 
         public Form1() {
             InitializeComponent();
@@ -22,7 +21,6 @@ namespace MergeIT {
         }
 
         private void listBoxFiles_DragEnter(object sender, DragEventArgs e) {
-
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
                 e.Effect = DragDropEffects.Copy;
         }
@@ -71,7 +69,7 @@ namespace MergeIT {
                     mergedPdf = ms.ToArray();
                     ByteArrayToFile(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\genPDF.pdf", mergedPdf);
                 }
-            }  
+            }
         }
 
         public bool ByteArrayToFile(string _FileName, byte[] _ByteArray) {
@@ -91,7 +89,7 @@ namespace MergeIT {
         }
 
         private void buttonClear_Click(object sender, EventArgs e) {
-            listBoxFiles.Items.Clear(); 
+            listBoxFiles.Items.Clear();
         }
 
         private void buttonRotatePlus_Click(object sender, EventArgs e) {
@@ -133,7 +131,24 @@ namespace MergeIT {
             object selected = listBoxFiles.SelectedItem;
             listBoxFiles.Items.Remove(selected);
         }
-    }
 
-    
+        private void showPreview() {
+            try {
+                if (listBoxFiles.SelectedItem == null) {
+                    axAcroPDF1.LoadFile("blank.pdf");
+                } else {
+                    axAcroPDF1.LoadFile(listBoxFiles.SelectedItem.ToString());
+                    axAcroPDF1.Update();
+                }    
+            } catch (ArgumentException ex) {
+                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void listBoxFiles_MouseClick(object sender, MouseEventArgs e) {
+            showPreview();
+        }
+    }
 }
