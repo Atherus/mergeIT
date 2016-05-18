@@ -133,18 +133,7 @@ namespace MergeIT {
         }
 
         private void showPreview() {
-            try {
-                if (listBoxFiles.SelectedItem == null) {
-                    axAcroPDF1.LoadFile("blank.pdf");
-                } else {
-                    axAcroPDF1.LoadFile(listBoxFiles.SelectedItem.ToString());
-                    axAcroPDF1.Update();
-                }    
-            } catch (ArgumentException ex) {
-                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } catch (Exception ex) {
-                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            webBrowser1.Navigate(listBoxFiles.SelectedItem.ToString());
         }
 
         private void listBoxFiles_MouseClick(object sender, MouseEventArgs e) {

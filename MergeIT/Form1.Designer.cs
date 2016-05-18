@@ -23,7 +23,6 @@
         /// obsah této metody v editoru kódu.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.listBoxFiles = new System.Windows.Forms.ListBox();
             this.buttonUp = new System.Windows.Forms.Button();
             this.buttonDown = new System.Windows.Forms.Button();
@@ -33,8 +32,7 @@
             this.buttonRotatePlus = new System.Windows.Forms.Button();
             this.buttonRotateMinus = new System.Windows.Forms.Button();
             this.buttonDeleteFile = new System.Windows.Forms.Button();
-            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // listBoxFiles
@@ -138,17 +136,16 @@
             this.buttonDeleteFile.UseVisualStyleBackColor = true;
             this.buttonDeleteFile.Click += new System.EventHandler(this.buttonDeleteFile_Click);
             // 
-            // axAcroPDF1
+            // webBrowser1
             // 
-            this.axAcroPDF1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.axAcroPDF1.Enabled = true;
-            this.axAcroPDF1.Location = new System.Drawing.Point(371, 13);
-            this.axAcroPDF1.Name = "axAcroPDF1";
-            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-            this.axAcroPDF1.Size = new System.Drawing.Size(235, 199);
-            this.axAcroPDF1.TabIndex = 9;
+            this.webBrowser1.Location = new System.Drawing.Point(372, 13);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(234, 199);
+            this.webBrowser1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -156,7 +153,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 250);
-            this.Controls.Add(this.axAcroPDF1);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.buttonDeleteFile);
             this.Controls.Add(this.buttonRotateMinus);
             this.Controls.Add(this.buttonRotatePlus);
@@ -169,7 +166,6 @@
             this.MinimumSize = new System.Drawing.Size(432, 285);
             this.Name = "Form1";
             this.Text = "MergeIT";
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +182,7 @@
         private System.Windows.Forms.Button buttonRotatePlus;
         private System.Windows.Forms.Button buttonRotateMinus;
         private System.Windows.Forms.Button buttonDeleteFile;
-        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 
