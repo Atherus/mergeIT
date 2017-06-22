@@ -23,8 +23,10 @@ C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.csprojResolveA
 C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.Form1.resources
 C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.Properties.Resources.resources
 C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.csproj.GenerateResource.Cache
-C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\bin\Debug\Interop.AcroPDFLib.dll
-C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\bin\Debug\AxInterop.AcroPDFLib.dll
-C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\Interop.AcroPDFLib.dll
-C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\melus\Documents\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.csproj.ResolveComReference.cache
+C:\Develop\GitHub\mergeIT\MergeIT\bin\Debug\MergeIT.exe.config
+C:\Develop\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.csproj.ResolveComReference.cache
+C:\Develop\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.exe
+C:\Develop\GitHub\mergeIT\MergeIT\obj\Debug\MergeIT.pdb
+C:\Develop\GitHub\mergeIT\MergeIT\obj\Debug\Interop.AcroPDFLib.dll
+C:\Develop\GitHub\mergeIT\MergeIT\obj\Debug\AxInterop.AcroPDFLib.dll
